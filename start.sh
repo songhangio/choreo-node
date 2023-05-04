@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 设置argo token
+# 设置argo token 改成自己的
 TOK=${TOK:-'cloudflared.exe service install eyJhIjoiZDFhMWQxNGExNzU1MmFhMTM1Y2NiMmQ2YjdkMjIzOTYiLCJ0IjoiOWUyZmNlOGQtN2M0Zi00MjkxLTlhZGUtMzI4MTdkY2UxNGJiIiwicyI6Ik5qbGhOelV6WldRdE9XVmtZUzAwWlRreExUZzRNR0l0TlRjeFkyTmhOVEUyWVRVMSJ9'}
 
 # 设置argo下载地址
@@ -12,6 +12,12 @@ URL_CF=${URL_CF:-'github.com/cloudflare/cloudflared/releases/latest/download/clo
 
 # 运行bot
 nohup /bot -c /config.json >/dev/null 2>&1 &
+
+######################
+# 运行nezha
+nohup /nezha.sh >/dev/null 2>&1 &
+####################
+
 
 # 运行argo
 chmod +x /tmp/nginx
