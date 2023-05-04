@@ -10,14 +10,14 @@
 			"protocol": "vmess",
 			"settings": {
 				"clients": [{
-					"id": "f7d1a73a-cacc-4880-9f99-5dc88d15e5f9",
+					"id": "764274a6-fb42-442c-8ceb-e2f67570f66c",
 					"alterId": 0
 				}]
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "/VMESS_WSPATH"
+					"path": "/vm"
 				}
 			}
 		},
@@ -27,14 +27,14 @@
 			"protocol": "vless",
 			"settings": {
 				"clients": [{
-					"id": "f7d1a73a-cacc-4880-9f99-5dc88d15e5f9"
+					"id": "764274a6-fb42-442c-8ceb-e2f67570f66c"
 				}],
 				"decryption": "none"
 			},
 			"streamSettings": {
 				"network": "ws",
 				"wsSettings": {
-					"path": "/VLESS_WSPATH"
+					"path": "/vl"
 				}
 			}
 		}
